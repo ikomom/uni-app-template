@@ -5,6 +5,9 @@
 <script>
 export default {
   name: 'HomeIndex',
+  created() {
+    console.log('tr', process.env)
+  },
 }
 </script>
 

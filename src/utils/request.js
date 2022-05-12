@@ -1,8 +1,6 @@
 import { wait } from '@/utils/wait'
 import store from '@/store'
 
-const baseURL = process.env.NODE_ENV === 'development' ? '/api' : '/api'
-
 class Request {
   constructor() {
     this.initOptions = {
@@ -10,7 +8,7 @@ class Request {
       dataType: 'json',
       header: {},
     }
-    this.baseURL = baseURL
+    this.baseURL = process.env.VUE_APP_API_BASE_URL
   }
 
   request(url, options = {}) {
