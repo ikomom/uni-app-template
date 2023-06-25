@@ -1,4 +1,6 @@
-# yanggo-mobile-wechat
+# uni-app-template
+
+This is a template project for uni-app when use Webstorm or Vscode
 
 ## Project setup
 ```
